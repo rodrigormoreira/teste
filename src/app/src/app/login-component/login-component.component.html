@@ -1,20 +1,19 @@
-<div class="fundo">
-    <div class="tela">
-        <h1 class="welcome">SEJA BEM VINDO!</h1>
-        <h4>Insira seus dados de login<br>
-        para acessar a plataforma</h4>
-        <form role="form">
-            <div class="form-group">
-                <input type="text" placeholder=" E-mail"
-                    #name>
-            </div>
-            <div class="form-group">
-                    <input type="password" placeholder=" Senha"
-                    #senha>
-            </div>
-        </form>
-        <button (click)="LoginCheck(name.value, senha.value)">LOGIN</button>
-        <p>Ainda não é cadastrado?<br>
-        Clique <b>aqui</b> e faça seu cadastro!</p>
-    </div>
+
+<div class="tela">
+    <h1 class="welcome">SEJA BEM VINDO!</h1>
+    <h4>Insira seus dados de login<br>
+    para acessar a plataforma</h4>
+    <form role="form">
+        <div class="form-group">
+            <input type="text" placeholder=" E-mail"
+                #name>
+        </div>
+        <div class="form-group">
+                <input type="password" placeholder=" Senha"
+                #senha>
+        </div>
+    </form>
+    <button (click)="LoginCheck(name.value, senha.value)">LOGIN</button>
+    <p>Ainda não é cadastrado?<br>
+    Clique <a class="link" href="https://www.google.com">aqui</a> e faça seu cadastro!</p>
 </div>
