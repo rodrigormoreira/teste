@@ -1,0 +1,61 @@
+.tela {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 496px;
+    height: 542px;
+    left: 712px;
+    top: 300px;
+    background-color: #053247;
+    font-family: Roboto;
+    color: #5DE2E7;
+    border-radius: 16px;
+}
+
+.fundo {
+    background-image: url(src\assets\img_fundo.jpg);
+    width: 1920px;
+    height: 1080px;
+}
+
+.welcome {
+    font-weight: bold;
+    font-size: 48px;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+input {
+    border-radius: 8px;
+    width: 396px;
+    height: 48px;
+    font-size: 14px;
+}
+
+button {
+    border-radius: 8px;
+    width: 396px;
+    height: 48px;
+    background-color: #5DE2E7;
+    padding: 10px;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #C7FFFF;
+}
+
+.form-group {
+    padding: 10px;
+}
