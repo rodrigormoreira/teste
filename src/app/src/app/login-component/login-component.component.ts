@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponentComponent implements OnInit {
 
-  // Exemplo de verificação p/ login
+  isWorking : boolean = true;
 
-  name = 'rodrigo';
-  password = '123';
-
-  LoginCheck(nome: string, senha: string){
-    return console.log(( nome === 'rodrigo' && senha === '123') ? 'SUCESSO!' : 'ERRO');
+  stopWorking() {
+    this.isWorking = !this.isWorking;
   }
 
   constructor() { }
