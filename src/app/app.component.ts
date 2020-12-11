@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  homePage: boolean = false;
 
-  Login(){
-    this.homePage = !this.homePage;
-  }
 }

@@ -1,24 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-component',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  autorizado: boolean = false;
 
-  loginCheck(user: string, pw: string){
-    if( user === 'admin' && pw === '123456') this.autorizado = true;
+  loginForm: FormGroup = new FormGroup({
+    'email' : new FormControl('', [Validators.required]),
+    'password' : new FormControl(''),
+  });
+
+  login() {
+    if(this.loginForm.get('email')?.value === 'admin@teste.com' && this.loginForm.get('password')?.value === '123admin!@#') this.router.navigate(['/home']);
+    else {
+      alert('erro');
+    }
   }
 
-  isWorking : boolean = true;
-
-  stopWorking() {
-    this.isWorking = !this.isWorking;
-  }
-
-  constructor() { }
+  constructor(private router: Router) {
+   }
 
   ngOnInit(): void {
   }
