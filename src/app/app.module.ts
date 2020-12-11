@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponentComponent } from './src/app/login-component/login-component.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponentComponent,
-    HomeComponent
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
