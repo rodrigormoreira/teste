@@ -45,6 +45,7 @@ button {
     padding: 10px;
     border: none;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
 p {
@@ -65,3 +66,17 @@ p {
     font-weight: bold;
     text-decoration: none;
 }
+
+a:hover {
+    color: hotpink;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+.button:active {
+    background-color: mistyrose;
+  }

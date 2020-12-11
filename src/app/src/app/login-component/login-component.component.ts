@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-component.component.css']
 })
 export class LoginComponentComponent implements OnInit {
+  autorizado: boolean = false;
+
+  loginCheck(user: string, pw: string){
+    if( user === 'admin' && pw === '123456') this.autorizado = true;
+  }
 
   isWorking : boolean = true;
 
