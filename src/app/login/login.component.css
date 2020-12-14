@@ -28,6 +28,16 @@ h4 {
     font-weight: 500;
 }
 
+.error {
+    text-align: center;
+    background-color: #EF3F3F;
+    width: 396px;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
 input {
     border-radius: 8px;
     font-weight: 400;
@@ -35,6 +45,8 @@ input {
     height: 48px;
     font-size: 14px;
     border: none;
+    padding-left: 8px;
+    box-sizing: border-box;
 }
 
 button {
